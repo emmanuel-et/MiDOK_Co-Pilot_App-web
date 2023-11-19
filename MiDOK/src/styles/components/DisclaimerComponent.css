@@ -1,1 +1,15 @@
 /* Style here */
+
+.disclaim{
+    width: 100%;
+    color: black;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 70%;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 5px;
+}
