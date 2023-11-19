@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-router-dom": "^6.19.0"
+  },
+  "devDependencies": {
+    "unplugin-auto-import": "^0.16.7"
+  }
+}
