@@ -1,6 +1,9 @@
+import CardComponent from "../components/CardComponent";
 
 const UserPage = () => {
-    return <h1>User Page</h1>
+    return (
+        <CardComponent text="GENERAL WELL-BEING" />
+    );
 };
 
 export default UserPage;
