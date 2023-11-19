@@ -7,10 +7,14 @@ const HomePage = () => {
     return (
         <>
             <div className="container">
-                <p className="midok">MIDOK</p>
+                <p className="midok">MiDOK</p>
                 <img src={logo} />
                 <p className="who">Who are you?</p>
-                <HomeCardComponent text="Student" />
+                <div className="card">
+                    <HomeCardComponent text="Student" />
+                    <HomeCardComponent text="Health Professional" />
+                    <HomeCardComponent text="Non-Health Professional" />
+                </div>
                 <Disclaimer />
             </div>
         </>
