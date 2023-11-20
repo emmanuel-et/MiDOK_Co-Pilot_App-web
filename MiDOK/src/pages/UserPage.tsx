@@ -5,12 +5,19 @@ import Student from "../images/advising.png"
 import HealthProfessional from "../images/health_professional_image.jpg"
 import NonHealthProfessional from "../images/nonpro.png"
 import styles from '../styles/UserPage.module.css'
+import { useNavigate } from 'react-router-dom';
 
 
 const UserPage = () => {
+    const navigate = useNavigate();
+
     let userType: string | undefined = useParams().id;
     let userText: string = "None";
     let imgSrc: string = "None";
+
+    const handleCardClick = () => {
+        navigate("/healthinfo");
+    }
 
     if (userType === "student") {
         imgSrc = Student;
@@ -28,9 +35,9 @@ const UserPage = () => {
             <div className={styles.container}>
                 <img className={styles.image} src={imgSrc} />
                 <p className={styles.text}>{userText}</p>
-                <CardComponent text="GENERAL WELL-BEING" />
-                <CardComponent text="HEALTHCARE INFO" />
-                <CardComponent text="REAL-TIME DATA" />
+                <CardComponent onClick={handleCardClick} text="GENERAL WELL-BEING" />
+                <CardComponent onClick={handleCardClick} text="HEALTHCARE INFO" />
+                <CardComponent onClick={handleCardClick} text="REAL-TIME DATA" />
                 <Disclaimer />
             </div>
         </>
