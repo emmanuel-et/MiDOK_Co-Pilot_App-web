@@ -15,6 +15,7 @@
     padding: 15px;
     height: 30px;
     width: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
     box-shadow: 0 0 10px #C0C0C0;
 }
 
@@ -59,6 +60,7 @@
 
 .dataItem p {
     margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
