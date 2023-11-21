@@ -13,7 +13,7 @@ const MiDOKSearchPage = () => {
     let data: string[] = ["Heart Disease", "Alzheimer's Disease", "Arthritis", "Cancer", "Diabetes", "High Blood Pressure"];
 
     const handleClick = () => {
-        navigate(`/`);
+        navigate("/diabetes");
     }
 
     if (diseaseClassificationId === "common-diseases") {
