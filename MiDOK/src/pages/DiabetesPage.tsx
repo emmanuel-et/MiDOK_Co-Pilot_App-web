@@ -57,7 +57,7 @@ const DiabetesPage = () => {
     const generatePrompt = () => {
         const symptomStr: string = processSymptoms();
         if (symptomStr == "") return ""
-        return `Someone is experiencing diabetes, the person is experiencing the following symptoms: ${symptomStr}. With a severity of ${sliderValue} for the past ${selected}. Do the symptoms match with diabetes symptoms. If yes, list in simple terms some possible treatment.`;
+        return `Someone is experiencing diabetes, the person is experiencing the following symptoms: ${symptomStr}. With a severity of ${sliderValue} for the past ${selected}. Do the symptoms match with diabetes symptoms. If yes, list in simple terms some possible treatment. Return with one line space between paragraphs.`;
     }
 
     const handleButtonClick = () => {
